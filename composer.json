@@ -1,0 +1,6 @@
+{
+    "require-dev": {
+        "mockery/mockery": "^1.2"
+    }
+
+}
