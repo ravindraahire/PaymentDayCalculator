@@ -1,7 +1,7 @@
 <?php
-require('PaymentDayCalculatorForMonth.php');
-require('PaymentReport.php');
 require('vendor/autoload.php');
+
+use PaymentCalculator\Service\PaymentReport;
 
 try {
 	$fileName = isset($argv[1]) ? $argv[1] : '';

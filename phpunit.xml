@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="Project Test Suite">
+            <file>tests/Service/PaymentDayCalculatorForMonthTest.php</file>
+            <file>tests/Service/CsvFileWriterTest.php</file>
+            <file>tests/Service/PaymentReportTest.php</file>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+    </php>
+</phpunit>
